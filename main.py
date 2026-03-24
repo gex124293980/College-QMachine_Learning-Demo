@@ -1,5 +1,5 @@
 # 这是一个示例 Python 脚本。
-
+import pyqpanda3.pilot_service.QPilotOSService
 # 按 ⌃R 执行或将其替换为您的代码。
 # 按 双击 ⇧ 在所有地方搜索类、文件、工具窗口、操作和设置。
 
@@ -12,7 +12,8 @@ from pyqpanda3.core import QCircuit, QProg, H, CNOT, measure, CPUQVM
 # 按装订区域中的绿色按钮以运行脚本。
 # if __name__ == '__main__':
 #     print('PyCharm')
-
+api_key = "56706b6182cce68810b1e76a886a5f09bb545738703102a0998aacb46fbdc6c26272596561717274387a4a51367a7262"
+pyqpanda3.pilot_service.QPilotOSService.QPilotService.build_init_msg(api_key)
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
 # 创建一个量子线路
 circuit = QCircuit()
